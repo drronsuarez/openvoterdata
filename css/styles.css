@@ -1,0 +1,15 @@
+.logo {
+  max-width: 10%;
+}
+
+img.for-neutral-against {
+  max-width: 80%;
+}
+
+img.priority {
+  max-width: 60%;
+}
+
+h5.panel-title {
+  margin: 10px 0 20px 0;
+}

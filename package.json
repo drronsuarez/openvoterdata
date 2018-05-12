@@ -1,0 +1,26 @@
+{
+  "name": "openvoterdata",
+  "version": "1.0.0",
+  "description": "### [bit.ly/opvoda](bit.ly/opvoda)",
+  "main": "index.js",
+  "dependencies": {
+    "ethereumjs-testrpc": "^6.0.3",
+    "ganache-cli": "^6.0.3",
+    "solc": "^0.4.20",
+    "web3": "^0.20.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryanfs/openvoterdata.git"
+  },
+  "author": "ryan f. salerno",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryanfs/openvoterdata/issues"
+  },
+  "homepage": "https://github.com/ryanfs/openvoterdata#readme"
+}

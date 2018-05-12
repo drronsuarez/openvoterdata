@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Open Voter Data</title>
+  <!-- <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'> -->
+  <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+</head>
+<body class="container">
+  <h1>Open Voter Data</h1>
+  <div class="table-responsive">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Issue</th>
+          <th>Votes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><button onclick="voteForCandidate('immigration')" class="btn btn-primary">Vote</button> Immigration</td>
+          <td id="candidate-1"></td>
+        </tr>
+        <tr>
+          <td><button onclick="voteForCandidate('guns')" class="btn btn-primary">Vote</button> Gun Control</td>
+          <td id="candidate-2"></td>
+        </tr>
+        <tr>
+          <td><button onclick="voteForCandidate('env')" class="btn btn-primary">Vote</button> Environment</td>
+          <td id="candidate-3"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+<script src="https://cdn.rawgit.com/ethereum/web3.js/develop/dist/web3.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+<script src="./index.js"></script>
+</html>

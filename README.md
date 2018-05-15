@@ -12,10 +12,12 @@ Need for Blockchain: a decentralized immutable ledger enables the disintermediat
 ### Canvassing Mobile App
 So here is how I thought a canvassing app should work. Traditionally, going door to door starts with figuring out what the voter knows about the candidate and introducing the candidate. Here's how I would like to approach things differently. The following assumes that you have limited time to keep the person being questioned at the door. Thus the number of issues should be kept small and or prioritized such that you'd keep asking more, as thee person is interested in telling you more. Start with a small set of issues, e.g. gun control, single payer health care, free college, taxes, economy/inequality, climate change, military budget.
 
-### Technology
-React, Web3js, Ethereum smart contract using the Truffle framework
+### Technologies
+ - React
+ - Web3js
+ - Ethereum smart contract using the Truffle framework
 
-###
+### Mockups
 ![](imgs/demo.gif?raw=true)
 
 
@@ -29,6 +31,14 @@ Start with focusing on what concerns the voter (instead of the candidate). For e
 
 ### Results:
 This approach is bottom up and pull vs. push, i.e. pulling concerns from the bottom up, vs. pushing ideas from a candidate onto people. It would also be the basis for beginning a move towards Liquid Democracy instead of Representative Democracy.
+
+### User Stories:
+ Open Voter data deals with three main users and their needs:
+ - **Canvassers** want to hand a simple digital survey to potential voters to capture their opinion on issues so that candidates know what the voters actually care about
+ - **Potential voters** want to have their issues heard so their elected candidates know how to best represent their municipality
+ - **Citizens of a democracy** want access to data on an immutable distributed ledger that verifies one vote-per-person (uPort) so they can trust the information they see.
+
+![](imgs/userstories.png?raw=true)
 
 #### Candidate & Advocacy Group
 Candidates will be able to share their position, provide campaign updates and discuss relevant issues with local stakeholders

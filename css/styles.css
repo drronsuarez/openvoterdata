@@ -1,15 +1,44 @@
+h1 {
+  font-size: 34px;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 0px!important;
+}
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+  top: 50%!important;
+}
+
+.swiper-button-prev, .swiper-container-rtl .swiper-button-prev {
+  top: 50%!important;
+}
+
 .logo {
   max-width: 10%;
 }
 
 img.for-neutral-against {
   max-width: 80%;
+  padding: 3px;
 }
 
 img.priority {
   max-width: 60%;
+  padding: 3px;
 }
 
 h5.panel-title {
   margin: 10px 0 20px 0;
+}
+
+label > input{ /* HIDE RADIO */
+  visibility: hidden; /* Makes input not-clickable */
+  position: absolute; /* Remove input from document flow */
+}
+label > input + img{ /* IMAGE STYLES */
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+label > input:checked + img{
+   /* (RADIO CHECKED) IMAGE STYLES */
+  border: 2px solid #007aff;
 }

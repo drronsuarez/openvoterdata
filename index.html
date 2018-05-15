@@ -4,100 +4,219 @@
   <title>Open Voter Data</title>
   <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.6/css/swiper.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
 </head>
 <body class="container">
-  <h1>Open Voter Data</h1>
-  <div class="table-responsive">
-    <table class="table table-bordered">
-      <thead>
-        <tr>
-          <th>Issue</th>
-          <th>Votes</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><button onclick="voteForCandidate('immigration')" class="btn btn-primary">Vote</button> Immigration</td>
-          <td id="candidate-1"></td>
-        </tr>
-        <tr>
-          <td><button onclick="voteForCandidate('guns')" class="btn btn-primary">Vote</button> Gun Control</td>
-          <td id="candidate-2"></td>
-        </tr>
-        <tr>
-          <td><button onclick="voteForCandidate('env')" class="btn btn-primary">Vote</button> Environment</td>
-          <td id="candidate-3"></td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
 
   <div class="container container-table">
     <div class="row vertical-center-row">
       <div class="text-center col-md-4 col-md-offset-4">
-        <!-- center content start -->
         <h1><img class="logo" src="imgs/logo.png"> Open Voter Data</h1>
         <p>Making Democracy from the bottom up with an Open Source dApp
           for Blockchain Decentralized Open Data that you own and control.</p>
-        <section>
-
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h2 class="panel-title">Gun Control</h2>
-            </div>
-            <div class="panel-body">
-              <div class="row">
-                <div class="col-xs-4 col-md-4">
-                  <img class="for-neutral-against" src="imgs/against.png">
-                  <span class="badge">Against</span>
-                </div>
-                <div class="col-xs-4 col-md-4">
-                  <img class="for-neutral-against" src="imgs/neutral.png">
-                  <span class="badge">Neutral</span>
-                </div>
-                <div class="col-xs-4 col-md-4">
-                  <img class="for-neutral-against" src="imgs/for.png">
-                  <span class="badge">For</span>
-                </div>
-              </div>
-            </div>
-            <div class="panel-footer">
-              <h5 class="panel-title">How much of a <strong>priority</strong> is this issue for you?</h5>
-              <div class="row">
-                <div class="col-xs-4 col-md-4">
-                  <img class="priority" src="imgs/low.png">
-                  <span class="badge">Low</span>
-                </div>
-                <div class="col-xs-4 col-md-4">
-                  <img class="priority" src="imgs/medium.png">
-                  <span class="badge">Medium</span>
-                </div>
-                <div class="col-xs-4 col-md-4">
-                  <img class="priority" src="imgs/high.png">
-                  <span class="badge">High</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <nav aria-label="...">
-          <h4>2 of 8</h4>
-          <ul class="pager">
-            <li><a href="#"><span aria-hidden="true">&larr;</span> Previous</a></li>
-            <li><a href="#">Next <span aria-hidden="true">&rarr;</span></a></li>
-          </ul>
-        </nav>
-
-        <!-- center content end -->
       </div>
     </div>
+    <!-- Slider main container -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <section>
+                <div class="text-center col-md-4 col-md-offset-4">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h2 class="panel-title">Gun Control</h2>
+                    </div>
+                    <div class="panel-body">
+                      <div class="row">
+                        <div class="col-xs-4 col-md-4">
+                          <label>
+                            <input type="radio" name="gun-control" value="against1" />
+                            <img class="for-neutral-against" src="imgs/against.png">
+                            <span class="badge">Against</span>
+                          </label>
+                        </div>
+                        <div class="col-xs-4 col-md-4">
+                          <label>
+                            <input type="radio" name="gun-control" value="neutral1" />
+                            <img class="for-neutral-against" src="imgs/neutral.png">
+                            <span class="badge">Neutral</span>
+                          </label>
+                        </div>
+                        <div class="col-xs-4 col-md-4">
+                          <label>
+                            <input type="radio" name="gun-control" value="for1" />
+                            <img class="for-neutral-against" src="imgs/for.png">
+                            <span class="badge">For</span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel-footer">
+                      <h5 class="panel-title">How much of a <strong>priority</strong> is this issue for you?</h5>
+                      <div class="row">
+                        <div class="col-xs-4 col-md-4">
+                          <label>
+                            <input type="radio" name="gun-control-priority" value="low1" />
+                            <img class="priority" src="imgs/low.png">
+                            <span class="badge">Low</span>
+                          </label>
+                        </div>
+                        <div class="col-xs-4 col-md-4">
+                          <label>
+                            <input type="radio" name="gun-control-priority" value="medium1" />
+                            <img class="priority" src="imgs/medium.png">
+                            <span class="badge">Medium</span>
+                          </label>
+                        </div>
+                        <div class="col-xs-4 col-md-4">
+                          <label>
+                            <input type="radio" name="gun-control-priority" value="high1" />
+                            <img class="priority" src="imgs/high.png">
+                            <span class="badge">High</span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <div class="swiper-slide">
+              <section>
+                <div class="text-center col-md-4 col-md-offset-4">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h2 class="panel-title">Environment</h2>
+                    </div>
+                    <div class="panel-body">
+                      <div class="row">
+                        <div class="col-xs-4 col-md-4">
+                          <label>
+                            <input type="radio" name="environment" value="against1" />
+                            <img class="for-neutral-against" src="imgs/against.png">
+                            <span class="badge">Against</span>
+                          </label>
+                        </div>
+                        <div class="col-xs-4 col-md-4">
+                          <label>
+                            <input type="radio" name="environment" value="neutral1" />
+                            <img class="for-neutral-against" src="imgs/neutral.png">
+                            <span class="badge">Neutral</span>
+                          </label>
+                        </div>
+                        <div class="col-xs-4 col-md-4">
+                          <label>
+                            <input type="radio" name="environment" value="for1" />
+                            <img class="for-neutral-against" src="imgs/for.png">
+                            <span class="badge">For</span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel-footer">
+                      <h5 class="panel-title">How much of a <strong>priority</strong> is this issue for you?</h5>
+                      <div class="row">
+                        <div class="col-xs-4 col-md-4">
+                          <label>
+                            <input type="radio" name="environment-priority" value="low1" />
+                            <img class="priority" src="imgs/low.png">
+                            <span class="badge">Low</span>
+                          </label>
+                        </div>
+                        <div class="col-xs-4 col-md-4">
+                          <label>
+                            <input type="radio" name="environment-priority" value="medium1" />
+                            <img class="priority" src="imgs/medium.png">
+                            <span class="badge">Medium</span>
+                          </label>
+                        </div>
+                        <div class="col-xs-4 col-md-4">
+                          <label>
+                            <input type="radio" name="environment-priority" value="high1" />
+                            <img class="priority" src="imgs/high.png">
+                            <span class="badge">High</span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <div class="swiper-slide">
+              <section>
+                <div class="text-center col-md-4 col-md-offset-4">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h2 class="panel-title">Immigration</h2>
+                    </div>
+                    <div class="panel-body">
+                      <div class="row">
+                        <div class="col-xs-4 col-md-4">
+                          <label>
+                            <input type="radio" name="immigration" value="against1" />
+                            <img class="for-neutral-against" src="imgs/against.png">
+                            <span class="badge">Against</span>
+                          </label>
+                        </div>
+                        <div class="col-xs-4 col-md-4">
+                          <label>
+                            <input type="radio" name="immigration" value="neutral1" />
+                            <img class="for-neutral-against" src="imgs/neutral.png">
+                            <span class="badge">Neutral</span>
+                          </label>
+                        </div>
+                        <div class="col-xs-4 col-md-4">
+                          <label>
+                            <input type="radio" name="immigration" value="for1" />
+                            <img class="for-neutral-against" src="imgs/for.png">
+                            <span class="badge">For</span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel-footer">
+                      <h5 class="panel-title">How much of a <strong>priority</strong> is this issue for you?</h5>
+                      <div class="row">
+                        <div class="col-xs-4 col-md-4">
+                          <label>
+                            <input type="radio" name="immigration-priority" value="low1" />
+                            <img class="priority" src="imgs/low.png">
+                            <span class="badge">Low</span>
+                          </label>
+                        </div>
+                        <div class="col-xs-4 col-md-4">
+                          <label>
+                            <input type="radio" name="immigration-priority" value="medium1" />
+                            <img class="priority" src="imgs/medium.png">
+                            <span class="badge">Medium</span>
+                          </label>
+                        </div>
+                        <div class="col-xs-4 col-md-4">
+                          <label>
+                            <input type="radio" name="immigration-priority" value="high1" />
+                            <img class="priority" src="imgs/high.png">
+                            <span class="badge">High</span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
   </div>
 
 </body>
 
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.6/js/swiper.min.js"></script>
 <script src="https://cdn.rawgit.com/ethereum/web3.js/develop/dist/web3.js"></script>
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
 <script src="./index.js"></script>
